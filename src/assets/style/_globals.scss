@@ -1,0 +1,423 @@
+@import "./mixins";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto&family=Rubik:ital,wght@0,300..900;1,300..900&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  padding: 0px 90px;
+}
+
+.introduction-sec {
+  background-image: url("../images/introduction-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 100px;
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../images/ellipse-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 340px;
+    width: 340px;
+    @include positionBoxProps(absolute, unset, 0px, unset, 0px, 5px, unset);
+  }
+
+  .intro-head-sec {
+    margin-left: 90px;
+    max-width: 1100px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../images/wave-icon.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 40px;
+      width: 222px;
+      @include positionBoxProps(absolute, unset, unset, 34%, unset, 5px, unset);
+    }
+
+    h2 {
+      @include textProps(500, 37px, $white-color, 54px, "Spectral SC");
+      text-transform: capitalize;
+    }
+  }
+
+  .intro-desc-sec {
+    @include gridProps(2fr 1.3fr, 26px);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+
+    .desc-inner-sec {
+      margin-left: 90px;
+      margin-top: 44px;
+
+      h3 {
+        @include textProps(500, 30px, $white-color, unset, "Nunito");
+      }
+
+      p {
+        @include textProps(400, 15px, $white-color, 23px, "Nunito");
+        max-width: 640px;
+      }
+    }
+
+    .intro-bg-sec {
+      background-image: url("../images/capnotrainer-img.png");
+      background-repeat: no-repeat;
+      // background-size: 560px 100%;
+      background-size: 100% 100%;
+      height: 415px;
+      width: 100%;
+      margin-top: -30px;
+    }
+  }
+
+  .inner-bt-bg {
+    background-image: linear-gradient(#008080, #001a1ac2);
+    height: 75px;
+    padding: 30px;
+    @include positionBoxProps(absolute, unset, unset, 0, 0, 0, unset);
+  }
+}
+
+.about-section {
+  .sponsors-section {
+    @include gridProps(repeat(4, 1fr), 26px);
+    padding: 30px 0px;
+
+    .sponsors-img-sec {
+      @include flexProps(flex, center, center);
+
+      &:nth-child(1) {
+        img {
+          max-height: 47px;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          max-height: 108px;
+        }
+      }
+
+      &:nth-child(3) {
+        img {
+          max-height: 75px;
+        }
+      }
+
+      &:nth-child(4) {
+        img {
+          max-height: 63px;
+        }
+      }
+    }
+  }
+}
+
+.experience-cards-sec {
+  background-color: #e6f2f2;
+
+  .exp-head-sec {
+    margin: auto;
+    max-width: 510px;
+    padding: 40px 0px;
+    line-height: 30px;
+    padding-top: 59px;
+
+    .head-txt {
+      @include textProps(600, 32px, $brand-color, unset, "Spectral SC");
+    }
+
+    .exp-txt {
+      font-family: "Spectral SC";
+      font-size: 14px;
+    }
+  }
+
+  .inner-experience-cards {
+    @include gridProps(repeat(3, 1fr), 43px);
+    padding-bottom: 160px;
+    position: relative;
+
+    .experience-card {
+      .text-card-sec {
+        box-shadow: 0px 5px 9px -2px #00000026;
+        padding: 6px 18px 18px 18px;
+        position: relative;
+        margin-top: -7px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        &::after {
+          content: "";
+          display: block;
+          box-shadow: 0px 0px 2px -2px rgba(0, 0, 0, 0.1490196078);
+          padding: 10px;
+          @include positionBoxProps(
+            absolute,
+            #e6f2f2,
+            -11px,
+            0px,
+            0px,
+            unset,
+            1
+          );
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+
+        h3 {
+          @include textProps(700, 19px, $brand-color, unset, "Nunito");
+        }
+
+        p {
+          @include textProps(400, 14px, $text-color, unset, "Nunito");
+          margin-top: 9px;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../images/experience-wave-icon.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 97px;
+      width: 344px;
+      @include positionBoxProps(
+        absolute,
+        unset,
+        unset,
+        unset,
+        unset,
+        27px,
+        unset
+      );
+    }
+  }
+}
+
+.feature-section {
+  margin-bottom: 40px;
+  .feature-head-sec {
+    text-align: center;
+    padding: 48px 0px;
+
+    .head-txt {
+      @include textProps(600, 30px, $text-color, unset, "Spectral SC");
+    }
+  }
+
+  .inner-feature-section {
+    @include gridProps(repeat(4, 1fr), 50px);
+
+    .feature-card {
+      img {
+        max-height: 55px;
+        margin-bottom: 14px;
+      }
+      h3 {
+        @include textProps(700, 17px, $text-color, unset, "Nunito");
+      }
+
+      p {
+        @include textProps(400, 14px, $text-color, unset, "Nunito");
+        margin-top: 8px !important;
+        max-width: 240px;
+      }
+    }
+  }
+}
+
+.work-section {
+  background-color: #e6f2f2;
+  background-image: url("../images/work-sec-bg.png");
+  background-repeat: no-repeat;
+  background-size: 980px 100%;
+  padding-top: 50px !important;
+  padding-bottom: 90px !important;
+  background-position: right;
+
+  .work-head-sec {
+    margin-bottom: 25px;
+    .head-txt {
+      @include textProps(600, 32px, $text-color, unset, "Spectral SC");
+    }
+  }
+
+  .inner-work-section {
+    @include gridProps(repeat(2, 1fr), 26px);
+    max-width: 700px;
+
+    .work-card {
+      background-color: #008080c2;
+      color: $white-color;
+      padding: 15px;
+      border-radius: 6px;
+
+      h3 {
+        @include textProps(500, 18px, $white-color, unset, "Nunito");
+      }
+
+      p {
+        @include textProps(300, 14px, $white-color, 21px, "Nunito");
+      }
+    }
+  }
+}
+
+.service-cards-section {
+  .service-head-sec {
+    text-align: center;
+    padding: 40px 0px;
+    padding-top: 59px;
+
+    .head-txt {
+      @include textProps(600, 32px, $text-color, unset, "Spectral SC");
+    }
+  }
+
+  .inner-service-section {
+    @include gridProps(repeat(4, 1fr), 43px);
+    padding-bottom: 160px;
+    position: relative;
+
+    .service-card {
+      .text-card-sec {
+        padding: 6px 18px 18px 18px;
+        position: relative;
+        margin-top: -7px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: $brand-color;
+
+        &::after {
+          content: "";
+          display: block;
+          padding: 10px;
+          @include positionBoxProps(
+            absolute,
+            $brand-color,
+            -11px,
+            0px,
+            0px,
+            unset,
+            1
+          );
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+
+        h3 {
+          @include textProps(700, 19px, $white-color, unset, "Nunito");
+        }
+
+        p {
+          @include textProps(400, 14px, $white-color, unset, "Nunito");
+          margin-top: 9px;
+        }
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 40px;
+  }
+
+  .introduction-sec {
+    .intro-head-sec {
+      margin-left: 40px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .intro-desc-sec {
+      @include gridProps(repeat(1, 1fr), 26px);
+
+      .intro-bg-sec {
+        margin-top: unset;
+        background-position: right;
+        background-size: 580px 100%;
+      }
+
+      .desc-inner-sec {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .feature-section {
+    .inner-feature-section {
+      @include gridProps(repeat(2, 1fr), 40px);
+
+      .feature-card {
+        p {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 25px;
+  }
+
+  .about-section {
+    .sponsors-section {
+      @include gridProps(repeat(2, 1fr), 20px);
+    }
+  }
+
+  .experience-cards-sec {
+    .exp-head-sec {
+      margin: unset;
+    }
+
+    .inner-experience-cards {
+      @include gridProps(repeat(2, 1fr), 40px);
+    }
+  }
+
+  .feature-section {
+    .feature-head-sec {
+      text-align: left;
+    }
+  }
+}

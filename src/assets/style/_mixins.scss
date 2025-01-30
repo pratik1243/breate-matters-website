@@ -1,0 +1,59 @@
+@import "./variables";
+
+@mixin flexProps($displayFlex, $alignItem, $justifyContent) {
+  display: $displayFlex;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin textProps($fontWeight, $fontSize, $color, $lineHeight, $fontFamily) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $color;
+  line-height: $lineHeight;
+  font-family: $fontFamily;
+}
+
+@mixin buttonProps(
+  $backgroundColor,
+  $padding,
+  $marginLeft,
+  $marginRight,
+  $border
+) {
+  outline: none;
+  cursor: pointer;
+  border-width: 0px;
+  padding: $padding;
+  color: $white-color;
+  font-size: 13.7px;
+  border-radius: 5px;
+  border: $border;
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+  background-color: $backgroundColor;
+}
+
+@mixin gridProps($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+@mixin positionBoxProps(
+  $position,
+  $backgroundColor,
+  $top,
+  $left,
+  $right,
+  $bottom,
+  $zIndex
+) {
+  position: $position;
+  background-color: $backgroundColor;
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  z-index: $zIndex;
+}
