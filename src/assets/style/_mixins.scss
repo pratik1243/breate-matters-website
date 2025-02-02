@@ -57,3 +57,19 @@
   right: $right;
   z-index: $zIndex;
 }
+
+@mixin backgroundImageProps(
+  $backgroundImage,
+  $backgroundRepeat,
+  $backgroundSize,
+  $backgroundPosition,
+  $height,
+  $width
+) {
+  background-image: url($backgroundImage);
+  background-repeat: $backgroundRepeat;
+  background-size: $backgroundSize;
+  background-position: $backgroundPosition;
+  height: $height;
+  width: $width;
+}
