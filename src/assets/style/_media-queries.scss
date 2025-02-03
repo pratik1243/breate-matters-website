@@ -136,15 +136,6 @@
     }
   }
 
-  .story-card-section {
-    padding: 0px 22px !important;
-
-    &::after {
-      @include positionBoxProps(absolute, $brand-color, unset, 0, 0, 0, unset);
-      padding: 14px;
-    }
-  }
-
   .user-feature-section {
     .inner-user-feature-section {
       .user-feature-card {
@@ -166,14 +157,31 @@
   }
 
   .story-card-section {
+    padding: 0px 22px !important;
+
+    &::after {
+      @include positionBoxProps(absolute, $brand-color, unset, 0, 0, 0, unset);
+      padding: 14px;
+    }
+
     .inner-story-card-sec {
       @include gridProps(repeat(1, 1fr), 35px);
     }
+  }
+
+  .work-section {
+    background-image: none !important;
   }
 }
 
 @media (max-width: 576px) {
   .introduction-sec {
+    .intro-head-sec {
+      h2 {
+        @include textProps(500, 30px, $white-color, 45px, "Spectral SC");
+      }
+    }
+
     .intro-desc-sec {
       .intro-bg-sec {
         @include backgroundImageProps(
@@ -188,6 +196,7 @@
     }
   }
 
+
   .service-cards-section {
     .inner-service-section {
       @include gridProps(repeat(1, 1fr), 35px);
@@ -195,6 +204,10 @@
   }
 
   .experience-cards-sec {
+    .exp-head-sec {
+      line-height: 40px;
+    }
+
     .inner-experience-cards {
       @include gridProps(repeat(1, 1fr), 40px);
 
