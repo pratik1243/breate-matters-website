@@ -19,7 +19,8 @@
   $padding,
   $marginLeft,
   $marginRight,
-  $border
+  $border,
+  $fontFamily
 ) {
   outline: none;
   cursor: pointer;
@@ -32,6 +33,7 @@
   margin-left: $marginLeft;
   margin-right: $marginRight;
   background-color: $backgroundColor;
+  font-family: $fontFamily;
 }
 
 @mixin gridProps($columns, $gap) {

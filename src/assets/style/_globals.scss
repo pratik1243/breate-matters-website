@@ -15,9 +15,30 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px 90px;
 }
 
+.navbar-section{
+  @include positionBoxProps(fixed, unset, -1px, 0, 0, unset, 1500);
+  @include flexProps(flex, center, space-between);
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  transition: all 0.4s;
+  
+  &.nav-bg{
+    background-color: #62b1b1;
+    box-shadow: 0px 5px 9px -2px #00000026;
+  }
+
+  .nav-logo{
+    max-height: 43px;
+  }
+
+  .book-btn{
+    @include buttonProps($brand-color, 11px 17px, 30px, unset, unset, "Nunito");
+  }
+}
+
 .introduction-sec {
   position: relative;
-  padding-top: 100px;
+  padding-top: 120px;
   z-index: 1;
   @include backgroundImageProps("../images/introduction-bg.png", no-repeat, cover, unset, unset, unset);
 
@@ -54,10 +75,11 @@ h1, h2, h3, h4, h5, h6, p {
 
     .desc-inner-sec {
       margin-left: 90px;
-      margin-top: 44px;
+      margin-top: 44px !important;
 
       h3 {
         @include textProps(500, 30px, $white-color, unset, "Nunito");
+        margin-bottom: 10px;
       }
 
       p {
@@ -134,12 +156,12 @@ h1, h2, h3, h4, h5, h6, p {
         background-color: #e6f2f2;
 
         .first-para-sec {
-          @include textProps(400, 15px, $text-color, 23px, "Nunito");
+          @include textProps(400, 14px, $text-color, 21px, "Nunito");
           margin: 30px 30px 0px 31px;
         }
 
         .discover-list {
-          margin: 25px 0px 40px 0px;
+          margin: 27px 0px 40px 0px;
           padding-left: 30px;
 
           li {
@@ -164,7 +186,7 @@ h1, h2, h3, h4, h5, h6, p {
 
         .last-para-sec {
           background-color: $brand-color;
-          @include textProps(400, 15px, $white-color, 23px, "Nunito");
+          @include textProps(400, 14px, $white-color, 21px, "Nunito");
           padding: 20px 29px;
         }
       }
@@ -302,6 +324,7 @@ h1, h2, h3, h4, h5, h6, p {
 
       p {
         @include textProps(300, 14px, $white-color, 21px, "Nunito");
+        margin-top: 7px;
       }
     }
   }
@@ -373,10 +396,16 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .inner-user-feature-section {
-    @include gridProps(repeat(3, 1fr), 26px);
+    @include flexProps(flex, center, unset);
+    flex-wrap: wrap;
+    gap: 26px;
 
+ 
     .user-feature-card {
       position: relative;
+      flex-grow: 1;
+      flex-basis: 30%;
+
       img {
         max-width: 100%;
         height: auto;
@@ -464,112 +493,6 @@ h1, h2, h3, h4, h5, h6, p {
           }
         }
       }
-    }
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    padding: 0px 40px;
-  }
-  
-  .story-card-section{
-    padding: 0px 40px !important;
-  }
-
-  .introduction-sec {
-    .intro-head-sec {
-      margin-left: 40px;
-
-      &::after {
-        display: none;
-      }
-    }
-
-    .intro-desc-sec {
-      @include gridProps(repeat(1, 1fr), 26px);
-
-      .intro-bg-sec {
-        margin-top: unset;
-        @include backgroundImageProps("../images/capnotrainer-img.png", no-repeat, 580px 100%, right, 415px, 100%);
-      }
-
-      .desc-inner-sec {
-        margin-left: 40px;
-      }
-    }
-  }
-
-  .feature-section {
-    .inner-feature-section {
-      @include gridProps(repeat(2, 1fr), 40px);
-
-      .feature-card {
-        p {
-          max-width: 320px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 991px) {
-  .user-feature-section {
-    .inner-user-feature-section {
-      @include gridProps(repeat(2, 1fr), 26px);
-
-      .user-feature-card {
-        img {
-          height: 100%;
-        }
-      }
-    }
-  }
-
-  .experience-cards-sec {
-    .exp-head-sec {
-      margin: unset;
-    }
-
-    .inner-experience-cards {
-      @include gridProps(repeat(2, 1fr), 40px);
-    }
-  }
-
-  .about-section {
-    .discover-section {
-      .discover-inner-sec {
-        @include gridProps(1fr, unset);
-
-        .yoga-bg-img {
-          @include backgroundImageProps("../images/yoga-bg.png", no-repeat, 100% 100%, unset, 600px, unset);
-        }
-  
-      }
-    }
-  }
-
-  .service-cards-section {
-    .inner-service-section {
-      @include gridProps(repeat(2, 1fr), 43px);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0px 25px;
-  }
-
-  .about-section {
-    .sponsors-section {
-      @include gridProps(repeat(2, 1fr), 20px);
-    }
-  }
-
-  .feature-section {
-    .feature-head-sec {
-      text-align: left;
     }
   }
 }

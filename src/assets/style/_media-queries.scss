@@ -1,0 +1,283 @@
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 40px;
+  }
+
+  .story-card-section {
+    padding: 0px 40px !important;
+  }
+
+  .introduction-sec {
+    .intro-head-sec {
+      margin-left: 40px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .intro-desc-sec {
+      @include gridProps(repeat(1, 1fr), 26px);
+
+      .intro-bg-sec {
+        margin-top: unset;
+        @include backgroundImageProps(
+          "../images/capnotrainer-img.png",
+          no-repeat,
+          580px 100%,
+          right,
+          415px,
+          100%
+        );
+      }
+
+      .desc-inner-sec {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .feature-section {
+    .inner-feature-section {
+      @include gridProps(repeat(2, 1fr), 40px);
+
+      .feature-card {
+        p {
+          max-width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .user-feature-section {
+    .inner-user-feature-section {
+      .user-feature-card {
+        flex-basis: 40%;
+
+        &:nth-child(3) {
+          order: 5;
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .experience-cards-sec {
+    .exp-head-sec {
+      margin: unset;
+    }
+
+    .inner-experience-cards {
+      @include gridProps(repeat(2, 1fr), 40px);
+
+      .experience-card {
+        &:nth-child(3) {
+          grid-column: 3 / 1;
+        }
+      }
+    }
+  }
+
+  .about-section {
+    .discover-section {
+      .discover-inner-sec {
+        @include gridProps(1fr, unset);
+
+        .yoga-bg-img {
+          @include backgroundImageProps(
+            "../images/yoga-bg.png",
+            no-repeat,
+            100% 100%,
+            unset,
+            600px,
+            unset
+          );
+        }
+      }
+    }
+  }
+
+  .service-cards-section {
+    .inner-service-section {
+      @include gridProps(repeat(2, 1fr), 35px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 22px;
+  }
+
+  .introduction-sec {
+    .intro-head-sec {
+      margin: 0px 22px;
+    }
+
+    .intro-desc-sec {
+      .desc-inner-sec {
+        margin: 0px 22px;
+      }
+      .intro-bg-sec {
+        @include backgroundImageProps(
+          "../images/capnotrainer-img.png",
+          no-repeat,
+          85% 100%,
+          right,
+          415px,
+          100%
+        );
+      }
+    }
+  }
+
+  .story-card-section {
+    padding: 0px 22px !important;
+
+    &::after {
+      @include positionBoxProps(absolute, $brand-color, unset, 0, 0, 0, unset);
+      padding: 14px;
+    }
+  }
+
+  .user-feature-section {
+    .inner-user-feature-section {
+      .user-feature-card {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  .about-section {
+    .sponsors-section {
+      @include gridProps(repeat(2, 1fr), 20px);
+    }
+  }
+
+  .feature-section {
+    .feature-head-sec {
+      text-align: left;
+    }
+  }
+
+  .story-card-section {
+    .inner-story-card-sec {
+      @include gridProps(repeat(1, 1fr), 35px);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .introduction-sec {
+    .intro-desc-sec {
+      .intro-bg-sec {
+        @include backgroundImageProps(
+          "../images/capnotrainer-img.png",
+          no-repeat,
+          96% 100%,
+          right,
+          415px,
+          100%
+        );
+      }
+    }
+  }
+
+  .service-cards-section {
+    .inner-service-section {
+      @include gridProps(repeat(1, 1fr), 35px);
+    }
+  }
+
+  .experience-cards-sec {
+    .inner-experience-cards {
+      @include gridProps(repeat(1, 1fr), 40px);
+
+      &::after {
+        @include backgroundImageProps(
+          "../images/experience-wave-icon.png",
+          no-repeat,
+          contain,
+          unset,
+          97px,
+          300px
+        );
+      }
+
+      .experience-card {
+        &:nth-child(3) {
+          grid-column: unset;
+        }
+      }
+    }
+  }
+
+  .feature-section {
+    .inner-feature-section {
+      @include gridProps(repeat(1, 1fr), 40px);
+
+      .feature-card {
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .work-section {
+    .inner-work-section {
+      @include gridProps(repeat(1, 1fr), 26px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-section {
+    .nav-logo {
+      max-height: 38px;
+    }
+  }
+
+  .about-section {
+    .sponsors-section {
+      @include gridProps(repeat(1, 1fr), 26px);
+    }
+  }
+
+  .introduction-sec {
+    .intro-desc-sec {
+      .intro-bg-sec {
+        @include backgroundImageProps(
+          "../images/capnotrainer-img.png",
+          no-repeat,
+          96% 100%,
+          right,
+          345px,
+          100%
+        );
+      }
+    }
+  }
+
+  .about-section {
+    .discover-section {
+      .discover-inner-sec {
+        .yoga-bg-img {
+          @include backgroundImageProps(
+            "../images/yoga-bg.png",
+            no-repeat,
+            100% 100%,
+            unset,
+            360px,
+            unset
+          );
+        }
+      }
+    }
+  }
+}
