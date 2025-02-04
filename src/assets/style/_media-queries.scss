@@ -7,6 +7,24 @@
     padding: 0px 40px !important;
   }
 
+  .about-section {
+    .info-section {
+      .info-bg-sec {
+        .info-feature-sec {
+          @include positionBoxProps(
+            absolute,
+            unset,
+            50px,
+            30%,
+            0px,
+            5px,
+            unset
+          );
+        }
+      }
+    }
+  }
+
   .introduction-sec {
     .intro-head-sec {
       margin-left: 40px;
@@ -100,6 +118,10 @@
         }
       }
     }
+
+    .info-section {
+      @include gridProps(1fr, 26px);
+    }
   }
 
   .service-cards-section {
@@ -147,6 +169,29 @@
   .about-section {
     .sponsors-section {
       @include gridProps(repeat(2, 1fr), 20px);
+    }
+
+    .info-section {
+      .info-bg-sec {
+        .info-bg-img {
+          max-width: 100%;
+          // height: auto;
+          max-height: unset !important;
+        }
+
+        .info-feature-sec {
+          margin-top: 32px;
+          @include positionBoxProps(
+            unset,
+            unset,
+            unset,
+            unset,
+            unset,
+            unset,
+            unset
+          );
+        }
+      }
     }
   }
 
@@ -196,6 +241,16 @@
     }
   }
 
+  .about-section {
+    .info-section {
+      .info-head-sec {
+        margin-top: 0px;
+        h2 {
+          @include textProps(600, 30px, $brand-color, 40px, "Spectral SC");
+        }
+      }
+    }
+  }
 
   .service-cards-section {
     .inner-service-section {
@@ -260,6 +315,21 @@
     .sponsors-section {
       @include gridProps(repeat(1, 1fr), 26px);
     }
+
+    .discover-section {
+      .discover-inner-sec {
+        .yoga-bg-img {
+          @include backgroundImageProps(
+            "../images/yoga-bg.png",
+            no-repeat,
+            100% 100%,
+            unset,
+            360px,
+            unset
+          );
+        }
+      }
+    }
   }
 
   .introduction-sec {
@@ -273,23 +343,6 @@
           345px,
           100%
         );
-      }
-    }
-  }
-
-  .about-section {
-    .discover-section {
-      .discover-inner-sec {
-        .yoga-bg-img {
-          @include backgroundImageProps(
-            "../images/yoga-bg.png",
-            no-repeat,
-            100% 100%,
-            unset,
-            360px,
-            unset
-          );
-        }
       }
     }
   }

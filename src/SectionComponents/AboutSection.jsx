@@ -6,7 +6,7 @@ import conspirLogo from "../assets/images/conspir-img.png";
 import discoverImg1 from "../assets/images/discover-icon1.png";
 import discoverImg2 from "../assets/images/discover-icon2.png";
 import discoverImg3 from "../assets/images/discover-icon3.png";
-import yogaBgImg from "../assets/images/yoga-bg.png";
+import capnotrainerImg2 from "../assets/images/capnotrainer-img2.png";
 
 const AboutSection = () => {
   return (
@@ -73,6 +73,30 @@ const AboutSection = () => {
               CapnoTrainer® GO, you’ll unlock a scientifically-backed pathway to
               breathing mastery.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="info-section container">
+        <div className="info-head-sec">
+          <h2>What Is the CapnoTrainer® GO?</h2>
+
+          <p>
+            The CapnoTrainer® GO isn’t just a tool—it’s your personal gateway to
+            a healthier, more aligned you. Using advanced <span className="colno-txt">capnography
+            technology</span>, it provides real-time insights into your breathing
+            behavior by measuring CO2 levels and visualizing your breathing
+            patterns. Paired with a guided learning framework, it empowers you
+            to:
+          </p>
+        </div>
+        <div className="info-bg-sec">
+          <img src={capnotrainerImg2} className="info-bg-img" />
+
+          <div className="info-feature-sec">
+            <div className="info-feature-card"> Identify and correct dysfunctional breathing habits.</div>
+            <div className="info-feature-card"> Understand the triggers and motivations behind your habits.</div>
+            <div className="info-feature-card"> Optimize your respiration for health, focus, and performance.</div>
           </div>
         </div>
       </div>

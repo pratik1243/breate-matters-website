@@ -7,7 +7,13 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -15,23 +21,23 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0px 90px;
 }
 
-.navbar-section{
+.navbar-section {
   @include positionBoxProps(fixed, unset, -1px, 0, 0, unset, 1500);
   @include flexProps(flex, center, space-between);
   padding-top: 13px !important;
   padding-bottom: 13px !important;
   transition: all 0.4s;
-  
-  &.nav-bg{
+
+  &.nav-bg {
     background-color: #62b1b1;
     box-shadow: 0px 5px 9px -2px #00000026;
   }
 
-  .nav-logo{
+  .nav-logo {
     max-height: 43px;
   }
 
-  .book-btn{
+  .book-btn {
     @include buttonProps($brand-color, 11px 17px, 30px, unset, unset, "Nunito");
   }
 }
@@ -40,12 +46,26 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   padding-top: 120px;
   z-index: 1;
-  @include backgroundImageProps("../images/introduction-bg.png", no-repeat, cover, unset, unset, unset);
+  @include backgroundImageProps(
+    "../images/introduction-bg.png",
+    no-repeat,
+    cover,
+    unset,
+    unset,
+    unset
+  );
 
   &::after {
     content: "";
     display: block;
-    @include backgroundImageProps("../images/ellipse-icon.png", no-repeat, contain, unset, 340px, 340px);
+    @include backgroundImageProps(
+      "../images/ellipse-icon.png",
+      no-repeat,
+      contain,
+      unset,
+      340px,
+      340px
+    );
     @include positionBoxProps(absolute, unset, 0px, unset, 0px, 5px, -1);
   }
 
@@ -57,7 +77,14 @@ h1, h2, h3, h4, h5, h6, p {
     &::after {
       content: "";
       display: block;
-      @include backgroundImageProps("../images/wave-icon.png", no-repeat, contain, unset, 40px, 222px);
+      @include backgroundImageProps(
+        "../images/wave-icon.png",
+        no-repeat,
+        contain,
+        unset,
+        40px,
+        222px
+      );
       @include positionBoxProps(absolute, unset, unset, 34%, unset, 5px, unset);
     }
 
@@ -90,7 +117,14 @@ h1, h2, h3, h4, h5, h6, p {
 
     .intro-bg-sec {
       margin-top: -30px;
-      @include backgroundImageProps("../images/capnotrainer-img.png", no-repeat, 100% 100%, unset, 415px, 100%);
+      @include backgroundImageProps(
+        "../images/capnotrainer-img.png",
+        no-repeat,
+        100% 100%,
+        unset,
+        415px,
+        100%
+      );
     }
   }
 
@@ -103,11 +137,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-section {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+
   .sponsors-section {
     @include gridProps(repeat(4, 1fr), 26px);
     padding: 30px 0px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
     .sponsors-img-sec {
       @include flexProps(flex, center, center);
@@ -149,7 +184,14 @@ h1, h2, h3, h4, h5, h6, p {
       margin-top: 22px;
 
       .yoga-bg-img {
-        @include backgroundImageProps("../images/yoga-bg.png", no-repeat, 100% 100%, unset, unset, unset);
+        @include backgroundImageProps(
+          "../images/yoga-bg.png",
+          no-repeat,
+          100% 100%,
+          unset,
+          unset,
+          unset
+        );
       }
 
       .discover-desc-sec {
@@ -188,6 +230,80 @@ h1, h2, h3, h4, h5, h6, p {
           background-color: $brand-color;
           @include textProps(400, 14px, $white-color, 21px, "Nunito");
           padding: 20px 29px;
+        }
+      }
+    }
+  }
+
+  .info-section {
+    @include gridProps(1.2fr 2fr, 26px);
+    margin-top: 90px;
+
+    .info-head-sec {
+      margin-top: 35px;
+
+      
+      h2 {
+        @include textProps(600, 45px, $brand-color, 53px, "Spectral SC");
+        margin-bottom: 21px;
+      }
+
+      p {
+        @include textProps(400, 15px, $text-color, 22px, "Nunito");
+
+        .colno-txt{
+          color: $brand-color;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .info-bg-sec {
+      position: relative;
+      .info-bg-img {
+        max-height: 380px;
+      }
+      .info-feature-sec {
+        @include positionBoxProps(
+          absolute,
+          unset,
+          50px,
+          285px,
+          0px,
+          5px,
+          unset
+        );
+
+        .info-feature-card {
+          background-color: #e6f2f2;
+          position: relative;
+          padding: 12px 12px 12px 37px;
+          border-radius: 7px;
+          @include textProps(600, 15px, $brand-color, unset, "Nunito");
+          margin-bottom: 17px;
+          width: fit-content;
+
+          &:after {
+            content: "";
+            display: block;
+            @include positionBoxProps(
+              absolute,
+              unset,
+              12px,
+              8px,
+              0px,
+              5px,
+              unset
+            );
+            @include backgroundImageProps(
+              "../images/check-icon.png",
+              no-repeat,
+              100% 100%,
+              unset,
+              20px,
+              20px
+            );
+          }
         }
       }
     }
@@ -235,7 +351,15 @@ h1, h2, h3, h4, h5, h6, p {
           padding: 10px;
           border-top-left-radius: 8px;
           border-top-right-radius: 8px;
-          @include positionBoxProps(absolute, #e6f2f2, -11px, 0px, 0px, unset, 1);
+          @include positionBoxProps(
+            absolute,
+            #e6f2f2,
+            -11px,
+            0px,
+            0px,
+            unset,
+            1
+          );
         }
 
         h3 {
@@ -257,8 +381,23 @@ h1, h2, h3, h4, h5, h6, p {
     &::after {
       content: "";
       display: block;
-      @include backgroundImageProps("../images/experience-wave-icon.png", no-repeat, cover, unset, 97px, 344px);
-      @include positionBoxProps(absolute, unset, unset, unset, unset, 27px, unset);
+      @include backgroundImageProps(
+        "../images/experience-wave-icon.png",
+        no-repeat,
+        cover,
+        unset,
+        97px,
+        344px
+      );
+      @include positionBoxProps(
+        absolute,
+        unset,
+        unset,
+        unset,
+        unset,
+        27px,
+        unset
+      );
     }
   }
 }
@@ -299,7 +438,14 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #e6f2f2;
   padding-top: 50px !important;
   padding-bottom: 90px !important;
-  @include backgroundImageProps("../images/work-sec-bg.png", no-repeat, 980px 100%, right, unset, unset);
+  @include backgroundImageProps(
+    "../images/work-sec-bg.png",
+    no-repeat,
+    980px 100%,
+    right,
+    unset,
+    unset
+  );
 
   .work-head-sec {
     margin-bottom: 25px;
@@ -362,7 +508,15 @@ h1, h2, h3, h4, h5, h6, p {
           content: "";
           display: block;
           padding: 10px;
-          @include positionBoxProps(absolute, $brand-color, -11px, 0px, 0px, unset, 1);
+          @include positionBoxProps(
+            absolute,
+            $brand-color,
+            -11px,
+            0px,
+            0px,
+            unset,
+            1
+          );
         }
 
         h3 {
@@ -400,7 +554,6 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap;
     gap: 26px;
 
- 
     .user-feature-card {
       position: relative;
       flex-grow: 1;
@@ -415,7 +568,15 @@ h1, h2, h3, h4, h5, h6, p {
         color: $white-color;
         padding: 15px;
         border-radius: 6px;
-        @include positionBoxProps(absolute, #008080c2, unset, 15px, 15px, 20px, unset);
+        @include positionBoxProps(
+          absolute,
+          #008080c2,
+          unset,
+          15px,
+          15px,
+          20px,
+          unset
+        );
 
         h3 {
           @include textProps(500, 18px, $white-color, unset, "Nunito");
@@ -448,7 +609,15 @@ h1, h2, h3, h4, h5, h6, p {
     content: "";
     display: block;
     padding: 30px;
-    @include positionBoxProps(absolute, $brand-color, 111px, 0, 0, unset, unset);
+    @include positionBoxProps(
+      absolute,
+      $brand-color,
+      111px,
+      0,
+      0,
+      unset,
+      unset
+    );
   }
 
   .inner-story-card-sec {
