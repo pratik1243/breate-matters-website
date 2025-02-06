@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/breate-matters-website/static/css/main.9b9d2232.css",
-    "main.js": "/breate-matters-website/static/js/main.6844b499.js",
+    "main.css": "/breate-matters-website/static/css/main.6352666e.css",
+    "main.js": "/breate-matters-website/static/js/main.047eb1a4.js",
     "static/media/work-sec-bg.png": "/breate-matters-website/static/media/work-sec-bg.6601627c5393099cea3f.png",
     "static/media/wellness-enthusiasts-img.png": "/breate-matters-website/static/media/wellness-enthusiasts-img.fa132885eec31caca627.png",
     "static/media/yoga-bg.png": "/breate-matters-website/static/media/yoga-bg.64391ba833eaa27cf3a4.png",
@@ -9,6 +9,7 @@
     "static/media/educators-trainers-img.png": "/breate-matters-website/static/media/educators-trainers-img.7ce1c24ff8c08695149d.png",
     "static/media/athletes-performers-img.png": "/breate-matters-website/static/media/athletes-performers-img.d9c0b07be8e2f204e4bc.png",
     "static/media/Health-practitioners-img.png": "/breate-matters-website/static/media/Health-practitioners-img.fb99883afe74ae975629.png",
+    "static/media/gym-equip-img.png": "/breate-matters-website/static/media/gym-equip-img.8e1d0b2e704b51e363c9.png",
     "static/media/waveform-analysis-img3.png": "/breate-matters-website/static/media/waveform-analysis-img3.a059eeb501eee82d1c89.png",
     "static/media/fitness-img1.png": "/breate-matters-website/static/media/fitness-img1.72999339bd07a8cdb82e.png",
     "static/media/waveform-analysis-img1.png": "/breate-matters-website/static/media/waveform-analysis-img1.6b990969fd1a0b2b2d1b.png",
@@ -25,11 +26,11 @@
     "static/media/story-user-img1.png": "/breate-matters-website/static/media/story-user-img1.0ab23a43ef335900de49.png",
     "static/media/airway-img.png": "/breate-matters-website/static/media/airway-img.d9d4133a23a3e35565be.png",
     "index.html": "/breate-matters-website/index.html",
-    "main.9b9d2232.css.map": "/breate-matters-website/static/css/main.9b9d2232.css.map",
-    "main.6844b499.js.map": "/breate-matters-website/static/js/main.6844b499.js.map"
+    "main.6352666e.css.map": "/breate-matters-website/static/css/main.6352666e.css.map",
+    "main.047eb1a4.js.map": "/breate-matters-website/static/js/main.047eb1a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b9d2232.css",
-    "static/js/main.6844b499.js"
+    "static/css/main.6352666e.css",
+    "static/js/main.047eb1a4.js"
   ]
 }
