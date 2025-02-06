@@ -1,3 +1,26 @@
+@media (max-width: 1300px) {
+  .user-feature-section {
+    .gym-section {
+      @include gridProps(1fr 1fr, 26px);
+
+      .gym-desc-section {
+        .gym-desc-card {
+          margin-top: 35px;
+          @include positionBoxProps(
+            relative,
+            $white-color,
+            unset,
+            unset,
+            unset,
+            unset,
+            unset
+          );
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0px 40px;
@@ -70,6 +93,10 @@
 
 @media (max-width: 991px) {
   .user-feature-section {
+    .gym-section {
+      @include gridProps(repeat(1, 1fr), 26px);
+    }
+
     .inner-user-feature-section {
       .user-feature-card {
         flex-basis: 40%;
@@ -159,6 +186,21 @@
   }
 
   .user-feature-section {
+    .gym-section {
+      padding: 50px 0px !important;
+
+      @include gridProps(repeat(1, 1fr), 26px);
+      .gym-desc-section {
+        h2 {
+          @include textProps(700, 30px, $text-color, 41px, "Spectral SC");
+          text-align: center;
+        }
+
+        p{
+          margin-top: 25px;
+        }
+      }
+    }
     .inner-user-feature-section {
       .user-feature-card {
         flex-basis: 100%;

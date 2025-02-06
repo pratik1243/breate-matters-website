@@ -242,7 +242,6 @@ p {
     .info-head-sec {
       margin-top: 35px;
 
-      
       h2 {
         @include textProps(600, 45px, $brand-color, 53px, "Spectral SC");
         margin-bottom: 21px;
@@ -251,7 +250,7 @@ p {
       p {
         @include textProps(400, 15px, $text-color, 22px, "Nunito");
 
-        .colno-txt{
+        .colno-txt {
           color: $brand-color;
           font-weight: 700;
         }
@@ -539,6 +538,48 @@ p {
 
 .user-feature-section {
   padding-bottom: 90px !important;
+
+  .gym-section {
+    @include gridProps(0.9fr 2fr, 26px);
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    .gym-sec-bg {
+      height: auto;
+      max-width: 100%;
+    }
+
+    .gym-desc-section {
+      position: relative;
+      max-width: 760px;
+      h2 {
+        @include textProps(700, 34px, $text-color, 46px, "Spectral SC");
+        margin-top: 22px;
+      }
+
+      p {
+        @include textProps(300, 16px, $text-color, 24px, "Nunito");
+        margin-top: 19px;
+      }
+
+      .gym-desc-card {
+        padding: 15px 20px;
+        border-radius: 9px;
+        max-width: 650px;
+        box-shadow: 0px 21.64px 47.09px 0px #0000001a;
+        @include textProps(600, 16px, $brand-color, 23px, "Nunito");
+        @include positionBoxProps(
+          absolute,
+          $white-color,
+          unset,
+          -50px,
+          0,
+          50px,
+          unset
+        );
+      }
+    }
+  }
 
   .user-feature-head-sec {
     text-align: center;
