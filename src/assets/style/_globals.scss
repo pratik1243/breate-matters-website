@@ -706,3 +706,60 @@ p {
     }
   }
 }
+
+.footer-sec {
+  @include gridProps(1fr 2fr 1fr, 33px);
+  padding-top: 50px !important;
+  padding-bottom: 28px !important;
+
+  .footer-logo {
+    max-height: 65px;
+  }
+
+  .footer-para {
+    @include textProps(500, 14px, #3c3c3c, unset, "Nunito");
+    margin-top: 10px;
+  }
+
+  .footer-contact-sec {
+    text-align: left;
+    max-width: 174px;
+    margin: auto;
+
+    span {
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .head-txt {
+      @include textProps(700, 21px, $text-color, unset, "Nunito");
+    }
+
+    .txt {
+      @include textProps(500, 15px, #3c3c3c, unset, "Nunito");
+    }
+  }
+
+  .stay-txt {
+    @include textProps(700, 21px, $text-color, unset, "Nunito");
+  }
+
+  .social-icon-sec {
+    margin-top: 18px;
+
+    img {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .footer-txt-sec{
+    grid-column: 1 / -1;
+    @include textProps(500, 15px, $text-color, unset, "Nunito");
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+

@@ -156,6 +156,10 @@
       @include gridProps(repeat(2, 1fr), 35px);
     }
   }
+
+  .footer-sec {
+    @include gridProps(repeat(2, 1fr), 33px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -196,7 +200,7 @@
           text-align: center;
         }
 
-        p{
+        p {
           margin-top: 25px;
         }
       }
@@ -284,6 +288,10 @@
   }
 
   .about-section {
+    .sponsors-section {
+      @include gridProps(repeat(1, 1fr), 20px);
+    }
+
     .info-section {
       .info-head-sec {
         margin-top: 0px;
@@ -344,6 +352,14 @@
       @include gridProps(repeat(1, 1fr), 26px);
     }
   }
+
+  .footer-sec {
+    @include gridProps(repeat(1, 1fr), 37px);
+
+    .footer-contact-sec {
+      margin: unset;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -354,10 +370,6 @@
   }
 
   .about-section {
-    .sponsors-section {
-      @include gridProps(repeat(1, 1fr), 26px);
-    }
-
     .discover-section {
       .discover-inner-sec {
         .yoga-bg-img {
