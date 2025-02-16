@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/breate-matters-website/static/css/main.6352666e.css",
-    "main.js": "/breate-matters-website/static/js/main.047eb1a4.js",
+    "main.css": "/breate-matters-website/static/css/main.c7d65191.css",
+    "main.js": "/breate-matters-website/static/js/main.9bda7915.js",
     "static/media/work-sec-bg.png": "/breate-matters-website/static/media/work-sec-bg.6601627c5393099cea3f.png",
     "static/media/wellness-enthusiasts-img.png": "/breate-matters-website/static/media/wellness-enthusiasts-img.fa132885eec31caca627.png",
     "static/media/yoga-bg.png": "/breate-matters-website/static/media/yoga-bg.64391ba833eaa27cf3a4.png",
@@ -26,11 +26,11 @@
     "static/media/story-user-img1.png": "/breate-matters-website/static/media/story-user-img1.0ab23a43ef335900de49.png",
     "static/media/airway-img.png": "/breate-matters-website/static/media/airway-img.d9d4133a23a3e35565be.png",
     "index.html": "/breate-matters-website/index.html",
-    "main.6352666e.css.map": "/breate-matters-website/static/css/main.6352666e.css.map",
-    "main.047eb1a4.js.map": "/breate-matters-website/static/js/main.047eb1a4.js.map"
+    "main.c7d65191.css.map": "/breate-matters-website/static/css/main.c7d65191.css.map",
+    "main.9bda7915.js.map": "/breate-matters-website/static/js/main.9bda7915.js.map"
   },
   "entrypoints": [
-    "static/css/main.6352666e.css",
-    "static/js/main.047eb1a4.js"
+    "static/css/main.c7d65191.css",
+    "static/js/main.9bda7915.js"
   ]
 }
