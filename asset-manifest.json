@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/breate-matters-website/static/css/main.5a1f3e9d.css",
+    "main.css": "/breate-matters-website/static/css/main.923f674a.css",
     "main.js": "/breate-matters-website/static/js/main.41e1489f.js",
-    "static/media/work-sec-bg.png": "/breate-matters-website/static/media/work-sec-bg.6601627c5393099cea3f.png",
+    "static/media/work-sec-bg.png": "/breate-matters-website/static/media/work-sec-bg.cae1b28cefc46b891666.png",
     "static/media/waveform-analysis-img1.png": "/breate-matters-website/static/media/waveform-analysis-img1.6b990969fd1a0b2b2d1b.png",
     "static/media/healthcare-professionals-img.png": "/breate-matters-website/static/media/healthcare-professionals-img.7172d4fa0dbd45ddf7f4.png",
     "static/media/educators-trainers-img.png": "/breate-matters-website/static/media/educators-trainers-img.0da19010ef826aa189d3.png",
@@ -26,11 +26,11 @@
     "static/media/story-user-img1.png": "/breate-matters-website/static/media/story-user-img1.0ab23a43ef335900de49.png",
     "static/media/airway-img.png": "/breate-matters-website/static/media/airway-img.d9d4133a23a3e35565be.png",
     "index.html": "/breate-matters-website/index.html",
-    "main.5a1f3e9d.css.map": "/breate-matters-website/static/css/main.5a1f3e9d.css.map",
+    "main.923f674a.css.map": "/breate-matters-website/static/css/main.923f674a.css.map",
     "main.41e1489f.js.map": "/breate-matters-website/static/js/main.41e1489f.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a1f3e9d.css",
+    "static/css/main.923f674a.css",
     "static/js/main.41e1489f.js"
   ]
 }
